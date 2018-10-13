@@ -4,7 +4,15 @@
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
+    .navigation-bar ul {
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+    }
+
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
     
@@ -20,6 +28,7 @@
       background-color: #555;
       color: white;
       padding: 15px;
+      position: bottom;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -30,3 +39,27 @@
       }
       .row.content {height:auto;} 
     }
+    /* .img-fluid {
+      width: 100%;
+      background-repeat:no-repeat;
+      background-size:100% 500px; 
+    } */
+    html { 
+      background: url(assets/background.PNG) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-sizea: auto;
+      background-size: cover;
+    }
+    .horizontal-stack {
+      display: inline;
+    }
+    .navbar-header {
+      float: left;
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+  }
+  .navbar-brand {
+    float: none;
+  }
