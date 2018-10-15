@@ -39,11 +39,7 @@
       }
       .row.content {height:auto;} 
     }
-    /* .img-fluid {
-      width: 100%;
-      background-repeat:no-repeat;
-      background-size:100% 500px; 
-    } */
+    
     html { 
       background: url(assets/background.PNG) no-repeat center center fixed; 
       -webkit-background-size: cover;
@@ -51,15 +47,18 @@
       -o-background-sizea: auto;
       background-size: cover;
     }
+    
     .horizontal-stack {
       display: inline;
     }
+    
     .navbar-header {
       float: left;
       padding: 15px;
       text-align: center;
       width: 100%;
-  }
-  .navbar-brand {
-    float: none;
-  }
+    }
+    
+    .navbar-brand {
+      float: none;
+    }
