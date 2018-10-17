@@ -47,18 +47,17 @@
       -o-background-sizea: auto;
       background-size: cover;
     }
-    
-    .horizontal-stack {
-      display: inline;
+
+    .navbar-brand-centered {
+      position: absolute;
+      left: 50%;
+      display: block;
+    }
+
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+      margin-left: -120px;
+      color: whitesmoke;
     }
     
-    .navbar-header {
-      float: left;
-      padding: 15px;
-      text-align: center;
-      width: 100%;
-    }
     
-    .navbar-brand {
-      float: none;
-    }
