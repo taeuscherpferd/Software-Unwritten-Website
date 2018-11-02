@@ -1,0 +1,96 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+  height: 450px
+}
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.bgimg {
+  background: url(../images/background.PNG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-sizea: auto;
+  height: 100vh;
+}
+
+.darkbg {
+  background-color: #505968;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-sizea: auto;
+  height: 100vh;
+}
+
+/* Set black background color, white text and some padding */
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  position: bottom;
+}
+
+.rounded-white {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
+
+/*html {*/
+
+/*  background: url(../images/background.PNG) no-repeat center center fixed;*/
+
+/*  -webkit-background-size: cover;*/
+
+/*  -moz-background-size: cover;*/
+
+/*  -o-background-sizea: auto;*/
+
+/*  background-size: cover;*/
+
+/*}*/
+
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+}
+
+.navbar>.container .navbar-brand-centered,
+.navbar>.container-fluid .navbar-brand-centered {
+  margin-left: -120px;
+  color: whitesmoke;
+}
