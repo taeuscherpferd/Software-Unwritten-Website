@@ -85,7 +85,7 @@ footer {
 
 .navbar-brand-centered {
   position: absolute;
-  left: 50%;
+  left: 51%;
   display: block;
 }
 
@@ -93,4 +93,9 @@ footer {
 .navbar>.container-fluid .navbar-brand-centered {
   margin-left: -120px;
   color: whitesmoke;
+}
+
+.inkSketch {
+  height: 30px;
+  width: 80px;
 }

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudFlare.com/ajax/libs/angular.js/1.7.2/angular.js"></script>
+  <script src="javascripts/scripts.js"></script>
 </head>
 
 <body>
@@ -20,13 +22,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand navbar-brand-centered" href="#">Software Unwritten</a>
+        <a class="navbar-brand navbar-brand-centered" href="/">Software Unwritten</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Comics</a></li>
+          <li><a href="/comics.html">Comics</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
@@ -35,22 +37,24 @@
     </div>
   </nav>
   <div class="darkbg">
-    <div class="col-xs-12" align="center"> </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="col-xs-12" align="center">
-      <h5 style="color: white">Using this text box you can search for an inktober drawing</h5>
-      <h5 style="color: white">Just type which day you would like to look up and click submit (1-31)</h5>
-      <input type="text" ng-model="form" ng-keyup="onup(form)" class="rounded-white">
-
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <div class="col-xs-12" align="center"> </div>
+      <br>
+      <br>
+      <br>
+      <div class="col-xs-12" align="center">
+        <h2 style="color: white">Using this text box you can search for an inktober drawing</h2>
+        <h4 style="color: white">Just type which day you would like to look up and click submit (1-31)</h4>
+        <input type="text" id="txtBx" class="rounded-white">
+        <button class="rounded-white" ng-model="button" ng-click="onclick(button)" type='submit'>Submit</button>
+      </div>
+      <div class="col-xs-12" align="center">
+        <br>
+        <br>
+        <br>
+      <div id="sketch" align="center"></div>
     </div>
   </div>
-
 </body>
 
 </html>
