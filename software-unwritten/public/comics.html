@@ -44,7 +44,7 @@
       <br>
       <div class="col-xs-12" align="center">
         <h2 style="color: white">Using this text box you can search for an inktober drawing</h2>
-        <h4 style="color: white">Just type which day you would like to look up and click submit (1-31)</h4>
+        <h4 style="color: white">Just type which day you would like to look up and click submit (1-31, 0 for prompts)</h4>
         <input type="text" id="txtBx" class="rounded-white">
         <button class="rounded-white" ng-model="button" ng-click="onclick(button)" type='submit'>Submit</button>
       </div>
@@ -52,7 +52,9 @@
         <br>
         <br>
         <br>
-      <div id="sketch" align="center"></div>
+      <div id="sketch" align="center">
+        <img src="images/inktober2018/prompts.jpeg" height="500" width="600" alt="Out of Bounds (Select 1-31)">
+      </div>
     </div>
   </div>
 </body>
